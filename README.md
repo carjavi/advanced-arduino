@@ -7,7 +7,7 @@
 <h4 align="right">Aug 22</h4>
 
 
- # Tipos de datos en Arduino
+# Tipos de datos en Arduino
 ## Directivas de precompilador
 Se ejecutan antes de compilar el código y no se ejecutan en tiempo de ejecución como el resto de código. Nos permite incluir ficheros, definir constantes y aplicar condicionales.
 
@@ -49,7 +49,7 @@ Biblioteca:
 #include <avr/pgmspace.h>
 ```
 ### Sintaxis
-const dataType variableName[] PROGMEM = {data0, data1, data3...};
+const dataType variableName[ ] PROGMEM = {data0, data1, data3...};
 - dataType - cualquier tipo de variable
 - variableName - el nombre de nuesto dato o matriz
 
@@ -60,6 +60,25 @@ Lo importante, tienes dos archivos obligatorios, uno con la **extensión .h** (c
 **Archivo keywords.txt** suele estar en todas las librerías es keywords.txt (keywords en español es palabras clave). Es un archivo de texto que contiene las palabras claves de la librería de Arduino. Su utilidad es indicar al IDE de Arduino que coloree dichas palabras cuando se escriban en el editor.
 
 > :warning: **Warning:** Hay que reiniciar el IDE de Arduino para que aparezca librería instaladas manualmente..!!!
+
+<br>
+
+## Using Exit (0) Statement Stop void loop () function
+The void loop can also be stopped using exit() statement. This statement is one of the simplest ways to stop a void loop function. Remember to use this statement at the end of your code because any instruction written after this line will not be executed until Arduino is reset or code is reuploaded.
+
+
+## break; 
+break is used to exit from a for, while or do…​while loop, bypassing the normal loop condition. It is also used to exit from a switch case statement.
+
+<br>
+
+# Pinout Arduino
+
+<p align="center"><img src="./img/arduino_nano.png" width="900" alt=" " /></p>
+<p align="center"><img src="./img/arduino_promini.png" width="900" alt=" " /></p>
+<p align="center"><img src="./img/Arduino_mega.png" width="900" alt=" " /></p>
+
+<br>
 
 
 
