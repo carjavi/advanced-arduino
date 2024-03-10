@@ -63,6 +63,51 @@ Lo importante, tienes dos archivos obligatorios, uno con la **extensión .h** (c
 
 <br>
 
+# Funciones
+VOID: vacias, no devuelven nada. cuando la funcion recibe una data o devuelve hay que declar es tipo de data 
+```
+// funciones que no devuelven nada
+
+void loop() {
+ sumFunction()
+}
+
+void sumFunction() {
+
+}
+```
+```
+// funciones que si devuelven algo
+int c;
+void setup() {
+ c = sumFunction();
+}
+
+void loop() {
+ sumFunction();
+}
+
+int sumFunction() {
+  return (a + b);
+}
+```
+sample:
+```
+int sumFunction(byte paramA, byte paramB) {
+  return (paramA + paramB);
+}
+int sumFunction(int paramA, int paramB, int paramC) {
+  return (paramA + paramB + paramC);
+}
+float sumFunction(float paramA, float paramB) {
+  return (paramA + paramB);
+}
+```
+
+> :memo: **Note:** BREAK para salir de un while, switch,
+
+> :memo: **Note:** exit(0) para salir de funcion  "void"
+
 ## Using Exit (0) Statement Stop void loop () function
 The void loop can also be stopped using exit() statement. This statement is one of the simplest ways to stop a void loop function. Remember to use this statement at the end of your code because any instruction written after this line will not be executed until Arduino is reset or code is reuploaded.
 
