@@ -108,12 +108,31 @@ float sumFunction(float paramA, float paramB) {
 
 > :memo: **Note:** exit(0) para salir de funcion  "void"
 
+<br>
+
 ## Using Exit (0) Statement Stop void loop () function
 The void loop can also be stopped using exit() statement. This statement is one of the simplest ways to stop a void loop function. Remember to use this statement at the end of your code because any instruction written after this line will not be executed until Arduino is reset or code is reuploaded.
 
 
 ## break; 
 break is used to exit from a for, while or do…​while loop, bypassing the normal loop condition. It is also used to exit from a switch case statement.
+
+<br>
+
+# Reiniciar Arduino & ESP32 por Software
+Metodo 1:
+```
+asm volatile ("  jmp 0");
+```
+Metodo 2:
+```
+void setup() {
+}
+void(* resetFunc) (void) = 0;//declare reset function
+
+
+resetFunc(); // call reset
+```
 
 <br>
 
