@@ -203,7 +203,7 @@ start();
 
 ```
 
-# Lectura de Datos en Arduino
+# Lectura/Envio de Datos en Arduino desde puerto USB
 
 ```c++
 void setup() {
