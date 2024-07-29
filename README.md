@@ -203,6 +203,26 @@ start();
 
 ```
 
+# Lectura de Datos en Arduino
+
+```c++
+void setup() {
+  Serial.begin(115200); // Configura la velocidad de baudios para la comunicación serial USB (para depuración)
+}
+
+void loop() {
+   // Leer desde el puerto serial USB (para depuración)
+  if (Serial.available()) {
+    String dataFromUSB = Serial.readStringUntil('\n');
+    Serial.print("Datos recibidos desde USB: ");
+    Serial.println(dataFromUSB);
+    // Aquí podrías realizar algún procesamiento de los datos si es necesario
+  }
+}
+
+```
+
+
 
 <br>
 
